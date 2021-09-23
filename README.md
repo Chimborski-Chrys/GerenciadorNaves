@@ -1,30 +1,30 @@
-# GerenciadorNaves
-Script de criação do bando de dados de um gerenciador de espaçonaves
+# GerenciadorNaves  
+Script de criação do bando de dados de um gerenciador de espaçonaves  
 
-USE [EstrelaDaMorte]
-GO
+USE [EstrelaDaMorte]  
+GO  
 
-/****** Object:  Table [dbo].[Planetas]    Script Date: 22/09/2021 23:32:32 ******/
-SET ANSI_NULLS ON
-GO
+/****** Object:  Table [dbo].[Planetas]    Script Date: 22/09/2021 23:32:32 ******/  
+SET ANSI_NULLS ON  
+GO  
 
-SET QUOTED_IDENTIFIER ON
-GO
+SET QUOTED_IDENTIFIER ON  
+GO  
 
-CREATE TABLE [dbo].[Planetas](
-	[IdPlaneta] [int] NOT NULL,
-	[Nome] [varchar](50) NOT NULL,
-	[Rotacao] [float] NOT NULL,
-	[Orbita] [float] NOT NULL,
-	[Diamentro] [float] NOT NULL,
-	[Clima] [varchar](50) NOT NULL,
-	[Populacao] [int] NOT NULL,
- CONSTRAINT [PK_Planetas] PRIMARY KEY CLUSTERED 
-(
-	[IdPlaneta] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
-GO
+CREATE TABLE [dbo].[Planetas](  
+	[IdPlaneta] [int] NOT NULL,  
+	[Nome] [varchar](50) NOT NULL,  
+	[Rotacao] [float] NOT NULL,  
+	[Orbita] [float] NOT NULL,  
+	[Diamentro] [float] NOT NULL,  
+	[Clima] [varchar](50) NOT NULL,  
+	[Populacao] [int] NOT NULL,  
+ CONSTRAINT [PK_Planetas] PRIMARY KEY CLUSTERED  
+(  
+	[IdPlaneta] ASC  
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]  
+) ON [PRIMARY]  
+GO  
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
